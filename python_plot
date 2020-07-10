@@ -12,7 +12,7 @@ class node:
         self.gval = gval
         self.hval = hval
         self.parent = parent
-        self.expaned = expanded
+        self.expanded = expanded
         self.blocked = blocked
         self.fval = gval+hval
         self.search = 0
@@ -47,7 +47,7 @@ col2 = col
 while (row2 == row and col2 == col) or Z[row2][col2] == 1:
     row2 = np.random.randint(100)
     col2 = np.random.randint(100)
-#start = node(row, col, 0, abs(row-row2) + abs(col-col2), None, False, False)
+ #start = node(row, col, 0, abs(row-row2) + abs(col-col2), None, False, False)
 start = S[row][col]
 start.row = row
 start.col = col
